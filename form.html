@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+
+<script>
+    function validateForm(){
+        var x=document.forms["Name"]["email"]["Date of Birth"]["Phone"].value;
+        if(x==""){
+            alert("Items must be filled out");
+            return false;
+        }
+    }
+    </script>
+<body style="background-color:cornflowerblue;">
+<form>
+    <div class="content">
+        <center>
+            <h1>LOGIN FORM</h1>
+            </center>
+            <table border="1"></table>
+        <table>
+            <center>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email"</td>
+        </tr>
+        <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date"</td>
+        </tr>
+        <tr>
+            <td>PhoneNumber:</td>
+            <td><input type="text"maxlength="10"pattern="\d{10}"</td>
+        </tr>
+        <tr>
+            <center>
+            <td><input type="submit" value="Submit"</td>
+            </center>
+        </tr>
+            </center>
+    </table>
+   </div>
+</form>
+</body>
+
+</body>
+</html>
